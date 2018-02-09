@@ -1,0 +1,74 @@
+<style>
+/* style="fill:#81C341;" */
+*{
+  fill: transparent;
+}
+svg {
+  max-width: 95%;
+  max-height: 95%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  }
+ svg #letter_n,
+svg #letter_d{
+     stroke:#81C341;
+    stroke-width: 1;
+    stroke-dasharray: 420px;
+    stroke-dashoffset: 420px;
+    animation-name: draw, fadeStroke;
+    animation-duration: 7s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: liniar;
+  }
+
+
+@keyframes draw {
+  0%{
+    stroke-dashoffset: 420px;
+    fill: transparent;
+  }
+
+  950%{
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 4;
+    stroke: #81C341;
+    fill: #81C341;
+  }
+}
+
+
+
+@keyframes show_green {
+  to {
+    fill: #81C341;
+  }
+}
+
+</style>
+
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+     id="Layer_2"
+     xmlns="http://www.w3.org/2000/svg"     xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0px" 
+     y="0px"
+	 viewBox="0 0 288 288" style="enable-background:new 0 0 288 288;" xml:space="preserve">
+  <g>
+<path style="fill:#81C341;"  id="letter_d" d="M50.726,13.325l13.913,32.738C127.75,17,231.75,63,216.576,170.649
+	c-165.553,0-165.72-0.423-165.553,0c12.144,30.685,56.022,59.185,99.576,19.812c62.387,0,60.178,0,60.178,0
+	s-17.217,44.861-61.025,61.932c13.612,32.862,13.612,32.862,13.612,32.862C338,199.5,237.943-52.666,50.726,13.325z"/>
+<path  id="letter_n" style="fill:#81C341;"
+      d="M51.023,127.932c20.841-49.326,87.92-53.552,112.044,0C51.023,127.932,51.023,127.932,51.023,127.932
+	z"/>
+  </g>
+</svg>
